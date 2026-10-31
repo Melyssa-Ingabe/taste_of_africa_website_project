@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to make the starter for injera, the traditional Ethiopian flatbread.">
+  <title>Injera | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="west-africa.html">West Africa</a></li>
+        <li><a href="east-africa.html">East Africa</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main class="recipe-page">
+
+    <article class="recipe">
+
+      <header class="recipe-intro">
+        <h1>Injera</h1>
+        <p class="recipe-meta">Region: East Africa &bull; Country: Ethiopia &bull; Fermentation time: 3 days</p>
+        <figure>
+          <img src="images/injera.jpg" alt="Injera flatbread served with Ethiopian stews">
+          <figcaption>Injera served with colourful Ethiopian stews.</figcaption>
+        </figure>
+        <p>
+          Injera is the soft, spongy, slightly sour flatbread at the centre of every Ethiopian
+          and Eritrean meal. It is used as both the plate and the spoon: stews are served on top
+          and torn pieces of injera are used to scoop them up. It is traditionally made from
+          <mark>teff</mark>, a tiny gluten-free grain native to Ethiopia and Eritrea, which is
+          fermented with a starter called <mark>ersho</mark> to give injera its tangy flavour and
+          bubbly texture. This page shows how to make the starter, which is the first and most
+          important step.
+        </p>
+      </header>
+
+      <!-- INGREDIENTS (with scaler for JavaScript later) -->
+      <section class="ingredients" aria-labelledby="ingredients-title">
+        <h2 id="ingredients-title">Ingredients</h2>
+
+        <div class="scaler">
+          <label for="servings">Batches:</label>
+          <input type="number" id="servings" min="1" max="10" value="1" data-base-servings="1">
+        </div>
+
+        <div id="ingredient-list">
+          <h3>For the starter</h3>
+          <ul>
+            <li><span class="amount" data-base="2">2</span> cups white or red <mark>teff</mark> flour</li>
+            <li><span class="amount" data-base="1.5">1.5</span> litres lukewarm water</li>
+            <li><span class="amount" data-base="500">500</span> ml cold water, for storing the starter in the fridge</li>
+          </ul>
+
+          <h3>Alternative flours (if you can't find teff)</h3>
+          <ul>
+            <li>Wheat flour (all-purpose)</li>
+            <li>Barley flour</li>
+            <li>Rice flour</li>
+            <li>Millet flour</li>
+            <li>Quinoa flour</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- INSTRUCTIONS -->
+      <section class="instructions" aria-labelledby="instructions-title">
+        <h2 id="instructions-title">Cooking Instructions</h2>
+
+        <details>
+          <summary>Step 1: Mix the flour and water</summary>
+          <p>Put the teff flour in a large bowl or container. Slowly add the lukewarm water while mixing until the flour and water are fully combined.</p>
+        </details>
+
+        <details>
+          <summary>Step 2: Ferment for three days</summary>
+          <p>Cover the container and leave it at room temperature, for example on the kitchen counter, for three days. This is when the natural fermentation happens.</p>
+        </details>
+
+        <details>
+          <summary>Step 3: Drain the liquid</summary>
+          <p>After three days you should see air bubbles on top, and a layer of liquid will have separated. Pour this top liquid away. The thick starter underneath is your ersho.</p>
+        </details>
+
+        <details>
+          <summary>Step 4: Use or store the starter</summary>
+          <p>You can use all of the starter right away. To keep it for later, add about 500 ml of cold water, cover, and store it in the fridge. It can be kept for up to three months, but remember to change the water at least once a week.</p>
+        </details>
+
+        <details>
+          <summary>Next step: Cooking the injera (general method)</summary>
+          <p>This part is not shown in the video. In general, the fermented batter is thinned with water to a pourable consistency, poured in a spiral onto a hot non-stick pan or traditional clay griddle (mitad), covered, and cooked on one side only until bubbles appear and the edges lift. Injera is not flipped.</p>
+        </details>
+      </section>
+
+      <!-- VIDEO TUTORIAL -->
+      <section class="video-section" aria-labelledby="video-title">
+        <h2 id="video-title">Video Tutorial</h2>
+        <div class="video-wrapper recipe-video">
+          <iframe
+            src="https://www.youtube.com/embed/hQuDRRMZVE0"
+            title="How to make the starter for injera"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+        <p class="credit">Recipe adapted from the video above. Check the video description for the creator's full details.</p>
+      </section>
+
+      <!-- MAP -->
+      <section class="map-section" aria-labelledby="map-title">
+        <h2 id="map-title">Where It Comes From</h2>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8067817.8266490055!2d35.194285401225535!3d9.121541404491493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2sEthiopia!5e0!3m2!1sen!2srw!4v1793484804526!5m2!1sen!2srw"
+            title="Map showing Ethiopia, the origin of injera"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tastes of Africa. Celebrating African food heritage.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
