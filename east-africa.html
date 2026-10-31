@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the food culture of East Africa: staples, spices, cooking techniques and signature dishes.">
+  <title>East Africa | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html">West Africa</a></li>
+        <li><a href="east-africa.html" aria-current="page">East Africa</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main class="region-page">
+
+    <header class="region-intro">
+      <h1>East Africa</h1>
+      <p class="recipe-meta">Fermented breads, slow-cooked stews and fresh greens</p>
+      <figure>
+        <img src="images/injera.jpg" alt="Injera flatbread served with Ethiopian stews, a classic East African meal">
+        <figcaption>Injera with stews, a classic Ethiopian meal.</figcaption>
+      </figure>
+    </header>
+
+    <!-- FOOD CULTURE -->
+    <section aria-labelledby="culture-title">
+      <h2 id="culture-title">Food Culture</h2>
+      <p>
+        East African food is shaped by the region's many landscapes and communities. In Ethiopia,
+        meals are eaten from a shared platter with soft injera, and the stews are flavoured with
+        the fiery <mark>berbere</mark> spice blend. Further south, in countries like Rwanda,
+        Kenya and Uganda, meals often pair a starchy staple with leafy greens, beans or slow-cooked
+        meat. Sharing food is a sign of respect and friendship across the region.
+      </p>
+    </section>
+
+    <!-- STAPLES -->
+    <section aria-labelledby="staples-title">
+      <h2 id="staples-title">Staple Foods</h2>
+      <ul class="staples-list">
+        <li>Teff</li>
+        <li>Maize</li>
+        <li>Cassava</li>
+        <li>Sorghum and millet</li>
+        <li>Beans</li>
+        <li>Plantain and bananas</li>
+        <li>Sweet potatoes</li>
+        <li>Leafy greens</li>
+        <li>Groundnuts</li>
+      </ul>
+    </section>
+
+    <!-- COOKING TECHNIQUES -->
+    <section aria-labelledby="techniques-title">
+      <h2 id="techniques-title">Cooking Techniques</h2>
+      <ul class="technique-list">
+        <li><strong>Fermenting:</strong> <mark>teff</mark> batter is left to ferment for days to make the tangy starter for injera.</li>
+        <li><strong>Slow stewing:</strong> meat, beans and leafy greens are simmered for a long time so the flavours deepen, as in isombe.</li>
+        <li><strong>Stirring stiff porridge:</strong> maize or cassava flour is cooked in boiling water and beaten smooth to make bread-like staples.</li>
+        <li><strong>Cooking on a griddle:</strong> flatbreads like injera are cooked on one side only on a large hot griddle.</li>
+        <li><strong>Grilling:</strong> meat is roasted over an open fire and shared with friends and family.</li>
+      </ul>
+    </section>
+
+    <!-- EXAMPLE DISHES -->
+    <section aria-labelledby="dishes-title">
+      <h2 id="dishes-title">Example Dishes</h2>
+      <ul class="dish-list">
+        <li>
+          <h3>Injera</h3>
+          <p>Soft, tangy teff flatbread from Ethiopia. <a href="injera.html">View the recipe</a></p>
+        </li>
+        <li>
+          <h3>Isombe</h3>
+          <p>Rwandan cassava leaves cooked with groundnuts. <a href="isombe.html">View the recipe</a></p>
+        </li>
+        <li>
+          <h3>Doro wat</h3>
+          <p>A spicy Ethiopian chicken stew, served on injera.</p>
+        </li>
+        <li>
+          <h3>Ugali with greens</h3>
+          <p>Stiff maize porridge served with sautéed greens, popular in Kenya and Tanzania.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video-section" aria-labelledby="video-title">
+      <h2 id="video-title">Video: East African Food</h2>
+      <div class="video-wrapper recipe-video">
+        <iframe
+          src="https://www.youtube.com/embed/g4pf4z3UeHw"
+          title="East African food video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tastes of Africa. Celebrating African food heritage.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
