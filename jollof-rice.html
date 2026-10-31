@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to cook authentic West African jollof rice.">
+  <title>Jollof Rice | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="west-africa.html">West Africa</a></li>
+        <li><a href="east-africa.html">East Africa</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main class="recipe-page">
+
+    <article class="recipe">
+
+      <header class="recipe-intro">
+        <h1>Jollof Rice</h1>
+                <p class="recipe-meta">Region: West Africa &bull; Serves 10 &bull; Time: about 2 hours</p>
+        <figure>
+          <img src="images/jollof-rice.jpg" alt="A pot of smoky red jollof rice served with grilled chicken">
+          <figcaption>Smoky party-style jollof rice.</figcaption>
+        </figure>
+        <p>
+          Jollof rice is one of West Africa's most celebrated dishes, cooked at weddings,
+          festivals and family gatherings. It is believed to have started with the Wolof people
+          of Senegal, and today Nigeria and Ghana love to debate whose version is best.
+          Its deep red colour and smoky flavour come from tomatoes, <mark>scotch bonnet</mark>
+          peppers and a mix of warm spices.
+        </p>
+      </header>
+
+            <!-- INGREDIENTS (with scaler for JavaScript later) -->
+      <section class="ingredients" aria-labelledby="ingredients-title">
+        <h2 id="ingredients-title">Ingredients</h2>
+
+        <div class="scaler">
+          <label for="servings">Servings:</label>
+          <input type="number" id="servings" min="1" max="30" value="10" data-base-servings="10">
+        </div>
+
+        <div id="ingredient-list">
+
+          <h3>For the chicken</h3>
+          <ul>
+            <li><span class="amount" data-base="1500">1500</span> g chicken thighs</li>
+            <li>A handful of chopped onion</li>
+            <li>Half a thumb-sized piece of ginger</li>
+            <li><span class="amount" data-base="2">2</span> cloves garlic, smashed</li>
+            <li><span class="amount" data-base="1">1</span> teaspoon <mark>thyme</mark> (or a few sprigs of fresh thyme)</li>
+            <li><span class="amount" data-base="1">1</span> teaspoon <mark>curry powder</mark></li>
+            <li><span class="amount" data-base="2">2</span> teaspoons salt</li>
+            <li><span class="amount" data-base="4">4</span> chicken bouillon cubes, crushed</li>
+            <li><span class="amount" data-base="0.5">0.5</span> cup water</li>
+          </ul>
+
+          <h3>For the tomato sauce</h3>
+          <ul>
+            <li><span class="amount" data-base="9">9</span> medium tomatoes (about 600 g)</li>
+            <li><span class="amount" data-base="3">3</span> large bell peppers (about 550 g)</li>
+            <li>1 to 2 <mark>scotch bonnet</mark> peppers</li>
+            <li>Half a small red onion</li>
+            <li><span class="amount" data-base="1">1</span> bulb of garlic</li>
+            <li>A few sprigs of fresh thyme</li>
+            <li>A drizzle of oil for roasting, plus oil for frying the chicken</li>
+          </ul>
+
+          <h3>For the rice</h3>
+          <ul>
+            <li><span class="amount" data-base="6">6</span> cups rice (about 1200 g)</li>
+            <li><span class="amount" data-base="0.5">0.5</span> cup oil</li>
+            <li>A handful of chopped onion</li>
+            <li><span class="amount" data-base="327">327</span> g tomato paste (12 oz)</li>
+            <li><span class="amount" data-base="1.5">1.5</span> cups blended tomato sauce (about 410 g)</li>
+            <li><span class="amount" data-base="2.5">2.5</span> teaspoons salt</li>
+            <li><span class="amount" data-base="1">1</span> teaspoon crushed chicken bouillon cube</li>
+            <li><span class="amount" data-base="1">1</span> tablespoon dried <mark>thyme</mark></li>
+            <li><span class="amount" data-base="2">2</span> bay leaves</li>
+            <li><span class="amount" data-base="1">1</span> tablespoon <mark>curry powder</mark></li>
+            <li><span class="amount" data-base="2">2</span> cups chicken stock</li>
+            <li><span class="amount" data-base="2">2</span> cups water</li>
+          </ul>
+
+        </div>
+      </section>
+
+            <!-- INSTRUCTIONS -->
+      <section class="instructions" aria-labelledby="instructions-title">
+        <h2 id="instructions-title">Cooking Instructions</h2>
+
+        <details>
+          <summary>Step 1: Season and steam the chicken</summary>
+          <p>Cut the chicken into smaller pieces. Season with the onion, ginger, garlic, salt, curry powder, crushed bouillon cubes and thyme. Do not add water yet. Mix well, cover, and steam on low heat for about 10 minutes so the spices sink into the meat.</p>
+        </details>
+
+        <details>
+          <summary>Step 2: Make the chicken stock</summary>
+          <p>The chicken will have released its own juices by now. Add the half cup of water, cover, and cook for another 10 to 15 minutes until the chicken is almost cooked through (it will be fried later). Take the chicken out and strain the stock to remove any bones or large chunks of ginger and garlic.</p>
+        </details>
+
+        <details>
+          <summary>Step 3: Make the tomato and pepper base</summary>
+          <p>Rinse the tomatoes, bell peppers and scotch bonnet. Remove the seeds and veins from the peppers, then cut everything into smaller pieces. Use as little or as much scotch bonnet as you like.</p>
+          <p><strong>Roasting method (smoky, rich flavour):</strong> put the tomatoes, peppers, onion and the whole garlic bulb in a baking dish. Drizzle with oil, add thyme, and roast for about 30 minutes, turning halfway. Let it cool slightly, squeeze the garlic out of its skin, and blend everything until completely smooth.</p>
+          <p><strong>Boiling method:</strong> blend the raw tomatoes and peppers until smooth, pour into a pot, and boil uncovered for about 40 minutes until reduced. Keep the lid off, as the mixture can splash.</p>
+        </details>
+
+        <details>
+          <summary>Step 4: Fry the chicken</summary>
+          <p>Fry the cooked chicken in oil with half an onion until golden brown, then set it aside and throw away the onion. For a lighter option, air-fry or bake the chicken at a high temperature so it browns without drying out.</p>
+        </details>
+
+        <details>
+          <summary>Step 5: Fry the onions and tomato paste</summary>
+          <p>Use less oil for this step. Fry the chopped onion for 3 to 4 minutes until soft. Add the tomato paste and fry for about 15 minutes, adding a little more oil if needed and watching that it does not burn. It is ready when the oil separates from the paste. Do not skip this step, because raw tomato paste is sour and can make the rice taste bitter.</p>
+        </details>
+
+        <details>
+          <summary>Step 6: Add the base and seasoning</summary>
+          <p>Stir in the blended base. Season with salt, crushed bouillon, curry powder, dried thyme and bay leaves. Pour in the stock and just enough water to loosen the sauce, keeping the rest of the water for later. Cover and simmer for about 5 minutes while you wash the rice.</p>
+        </details>
+
+        <details>
+          <summary>Step 7: Wash and add the rice</summary>
+          <p>Rinse the rice several times until the water runs clear. If you use hot water, finish with a cold rinse so the rice does not start cooking. Add the rice to the sauce and mix well so no lumps of sauce stay at the bottom. Add the remaining water until it sits just slightly above the rice. Too much water makes the rice soggy. Do not parboil the rice first, because it needs time to absorb the sauce.</p>
+        </details>
+
+        <details>
+          <summary>Step 8: Cook the rice</summary>
+          <p>Cover the pot tightly with foil, then the lid, to trap the steam. Cook on low-medium heat for 30 to 40 minutes. For smoky party-style jollof, cook on low heat for 10 minutes, then raise the heat to high for the remaining 20 to 25 minutes. Mix well when the rice is done.</p>
+        </details>
+
+        <details>
+          <summary>Step 9: Fix problems and serve</summary>
+          <p><strong>Too dry?</strong> Stir in some butter, chopped onion and chopped tomato, cover, and steam for 5 to 10 minutes.</p>
+          <p><strong>Too soggy?</strong> Leave the pot uncovered so the steam escapes, or spread the rice on a wide tray to dry out.</p>
+          <p>Serve with the fried chicken and fried plantain.</p>
+        </details>
+
+        <details>
+          <summary>Tips: the right rice and pot</summary>
+          <p>Use long-grain parboiled rice or sella (golden) basmati. Avoid regular white rice and jasmine rice, which turn sticky. For smoky party jollof, use a cast-iron or heavy pot. A non-stick pot works fine for regular jollof.</p>
+        </details>
+      </section>
+
+      <!-- VIDEO TUTORIAL -->
+      <section class="video-section" aria-labelledby="video-title">
+        <h2 id="video-title">Video Tutorial</h2>
+                <div class="video-wrapper recipe-video">
+          <iframe
+            src="https://www.youtube.com/embed/jDbUg4f9EFw"
+            title="How to cook jollof rice"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+        <p class="credit">Recipe adapted from the video above. Check the video description for the creator's full recipe.</p>
+      </section>
+
+      <!-- NUTRITION TABLE -->
+      <section class="nutrition" aria-labelledby="nutrition-title">
+        <h2 id="nutrition-title">Nutritional Facts</h2>
+        <table>
+          <caption>Approximate values per serving</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nutrient</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Calories</th><td>380 kcal</td></tr>
+            <tr><th scope="row">Carbohydrates</th><td>55 g</td></tr>
+            <tr><th scope="row">Protein</th><td>8 g</td></tr>
+            <tr><th scope="row">Fat</th><td>14 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- MAP -->
+      <section class="map-section" aria-labelledby="map-title">
+        <h2 id="map-title">Where It Comes From</h2>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955982.7978993487!2d-17.16039873798965!3d14.469498362052535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0x5a46a55099615940!2sSenegal!5e0!3m2!1sen!2srw!4v1793483359510!5m2!1sen!2srw"
+            title="Map showing Senegal, the origin of jollof rice"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tastes of Africa. Celebrating African food heritage.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

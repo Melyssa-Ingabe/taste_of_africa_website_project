@@ -328,6 +328,155 @@ button:hover {
   box-shadow: 0 0 6px var(--color-secondary);
 }
 
+/* ========== RECIPE PAGES ========== */
+.recipe-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem 5vw;
+}
+
+.recipe-intro h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.recipe-meta {
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.recipe-intro figure {
+  margin-bottom: 1.5rem;
+}
+
+.recipe-intro img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.recipe-intro figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0.75;
+  margin-top: 0.5rem;
+}
+
+.recipe section {
+  padding: 2rem 0 0;
+}
+
+.recipe h2 {
+  text-align: left;
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Ingredients */
+.ingredients ul {
+  background-color: var(--color-card);
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.ingredients li {
+  margin-bottom: 0.4rem;
+}
+
+.scaler {
+  margin-bottom: 1rem;
+}
+
+.scaler input {
+  width: 5rem;
+  padding: 0.4rem;
+  font-family: inherit;
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  background-color: var(--color-card);
+  color: var(--color-text);
+}
+
+/* Instructions (details/summary) */
+details {
+  background-color: var(--color-card);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+}
+
+summary {
+  padding: 1rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+summary:hover {
+  background-color: rgba(224, 165, 38, 0.2);
+}
+
+details p {
+  padding: 0 1.2rem 1.2rem;
+}
+
+/* Recipe video + map */
+.recipe-video,
+.map-wrapper {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Nutrition table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+caption {
+  caption-side: bottom;
+  font-size: 0.85rem;
+  padding: 0.6rem;
+  opacity: 0.75;
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.ingredients h3 {
+  color: var(--color-accent);
+  margin: 1.5rem 0 0.6rem;
+}
+
 /* ========== 9. RESPONSIVE ========== */
 @media (max-width: 700px) {
   .site-header {
