@@ -1,0 +1,349 @@
+/* ========== 1. VARIABLES (colour palette + dark mode) ========== */
+:root {
+  --color-primary: #b5361b;      /* deep red (spice) */
+  --color-secondary: #e0a526;    /* warm yellow (turmeric) */
+  --color-accent: #5a3a22;       /* earthy brown */
+  --color-bg: #fff8ee;           /* warm cream */
+  --color-card: #ffffff;
+  --color-text: #2b1d12;
+  --shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  --radius: 14px;
+}
+
+body.dark {
+  --color-bg: #1c1410;
+  --color-card: #2a1f18;
+  --color-text: #f5e9d8;
+  --color-accent: #e0a526;
+}
+
+/* ========== 2. BASE STYLES ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  padding: 3rem 5vw;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+/* Custom style for <mark> */
+mark {
+  background-color: var(--color-secondary);
+  color: #2b1d12;
+  padding: 0 0.3rem;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.btn,
+button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover,
+button:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* ========== 3. HEADER & NAVIGATION ========== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 5vw;
+  background-color: var(--color-accent);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--color-secondary);
+  border-bottom-color: var(--color-secondary);
+}
+
+.theme-toggle {
+  padding: 0.5rem 0.8rem;
+  background-color: transparent;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+}
+
+/* ========== 4. HERO SECTION ========== */
+.hero {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(60, 20, 10, 0.65);   /* dark overlay */
+}
+
+.hero-overlay,
+.video-wrapper {
+  position: relative;   /* sits above the overlay */
+  z-index: 1;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 2rem 5vw 0;
+}
+
+.hero-overlay h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive video */
+.video-wrapper {
+  width: 90%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ========== 5. FEATURED DISHES (cards) ========== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dish-card {
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.dish-card:hover {
+  transform: translateY(-6px);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;    /* this fixes the oversized images */
+}
+
+.dish-card figcaption {
+  padding: 1.2rem;
+}
+
+.dish-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.dish-card p {
+  margin-bottom: 0.8rem;
+}
+
+/* ========== 6. EXPLORE BY REGION ========== */
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.region-link {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.region-link:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.03);
+}
+
+/* ========== 7. LATEST FOOD TRENDS ========== */
+.trends {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.trend-item {
+  background-color: var(--color-card);
+  border-left: 6px solid var(--color-secondary);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.trend-item h3 {
+  color: var(--color-primary);
+}
+
+.trend-item time {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* ========== 8. FOOTER ========== */
+.site-footer {
+  background-color: var(--color-accent);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 5vw;
+}
+
+.newsletter {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.newsletter input {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-family: inherit;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 6px var(--color-secondary);
+}
+
+/* ========== 9. RESPONSIVE ========== */
+@media (max-width: 700px) {
+  .site-header {
+    position: static;        /* header scrolls away instead of sticking */
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem 5vw;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 0.6rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
