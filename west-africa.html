@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the food culture of West Africa: staples, spices, cooking techniques and signature dishes.">
+  <title>West Africa | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html" aria-current="page">West Africa</a></li>
+        <li><a href="east-africa.html">East Africa</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main class="region-page">
+
+    <header class="region-intro">
+      <h1>West Africa</h1>
+      <p class="recipe-meta">Bold, spicy and made for sharing</p>
+      <figure>
+        <img src="images/jollof-rice.jpg" alt="Jollof rice with grilled chicken, a classic West African dish">
+        <figcaption>Jollof rice, the dish West Africa is best known for.</figcaption>
+      </figure>
+    </header>
+
+    <!-- FOOD CULTURE -->
+    <section aria-labelledby="culture-title">
+      <h2 id="culture-title">Food Culture</h2>
+      <p>
+        West African cooking is known for its bold, layered flavours and its love of heat.
+        Meals are social: big pots are cooked for families, weddings and festivals, and food is
+        often shared from a common dish. Sauces and stews are built slowly from tomatoes, onions
+        and peppers, then seasoned with <mark>scotch bonnet</mark> peppers, ginger, garlic,
+        thyme and curry powder. Many dishes are served with a starchy side that is used to
+        scoop up the sauce.
+      </p>
+    </section>
+
+    <!-- STAPLES -->
+    <section aria-labelledby="staples-title">
+      <h2 id="staples-title">Staple Foods</h2>
+      <ul class="staples-list">
+        <li>Rice</li>
+        <li>Yams</li>
+        <li>Cassava</li>
+        <li>Plantain</li>
+        <li>Millet and sorghum</li>
+        <li>Fonio</li>
+        <li>Maize</li>
+        <li>Groundnuts</li>
+        <li>Okra</li>
+        <li>Palm oil</li>
+      </ul>
+    </section>
+
+    <!-- COOKING TECHNIQUES -->
+    <section aria-labelledby="techniques-title">
+      <h2 id="techniques-title">Cooking Techniques</h2>
+      <ul class="technique-list">
+        <li><strong>One-pot rice:</strong> rice is cooked directly in a seasoned tomato and pepper sauce, as in jollof, so it absorbs all the flavour.</li>
+        <li><strong>Stewing:</strong> rich soups and stews are simmered slowly with <mark>palm oil</mark>, peppers and leafy greens.</li>
+        <li><strong>Pounding:</strong> yam, cassava or plantain is pounded into a smooth, stretchy dough called fufu.</li>
+        <li><strong>Grilling:</strong> meat is rubbed with a spicy peanut mix and grilled over fire, as in suya.</li>
+        <li><strong>Smoking and drying:</strong> fish and meat are smoked or dried to add depth to soups and sauces.</li>
+      </ul>
+    </section>
+
+    <!-- EXAMPLE DISHES -->
+    <section aria-labelledby="dishes-title">
+      <h2 id="dishes-title">Example Dishes</h2>
+      <ul class="dish-list">
+        <li>
+          <h3>Jollof Rice</h3>
+          <p>Rice cooked in a smoky tomato and pepper sauce. <a href="jollof-rice.html">View the recipe</a></p>
+        </li>
+        <li>
+          <h3>Fufu with soup</h3>
+          <p>Soft pounded dough eaten with okra, egusi or groundnut soup.</p>
+        </li>
+        <li>
+          <h3>Suya</h3>
+          <p>Thin slices of grilled meat coated in a spicy groundnut seasoning.</p>
+        </li>
+        <li>
+          <h3>Thieboudienne</h3>
+          <p>Senegal's national dish of fish and vegetables cooked with rice.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video-section" aria-labelledby="video-title">
+      <h2 id="video-title">Video: West African Food</h2>
+      <div class="video-wrapper recipe-video">
+        <iframe
+          src="https://www.youtube.com/embed/Rhs2vV3iJdA"
+          title="West African food video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tastes of Africa. Celebrating African food heritage.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
