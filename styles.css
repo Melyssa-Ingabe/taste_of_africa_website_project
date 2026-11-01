@@ -8,6 +8,7 @@
   --color-text: #2b1d12;
   --shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   --radius: 14px;
+  --color-header: #5a3a22;       /* header and footer brown */
 }
 
 body.dark {
@@ -15,6 +16,7 @@ body.dark {
   --color-card: #2a1f18;
   --color-text: #f5e9d8;
   --color-accent: #e0a526;
+  --color-header: #3a2415;
 }
 
 /* ========== 2. BASE STYLES ========== */
@@ -99,7 +101,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem 5vw;
-  background-color: var(--color-accent);
+  background-color: var(--color-header);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -145,7 +147,7 @@ button:hover {
 
 .theme-toggle:hover {
   background-color: var(--color-secondary);
-  color: var(--color-accent);
+  color: var(--color-header);
 }
 
 /* ========== 4. HERO SECTION ========== */
@@ -300,7 +302,7 @@ button:hover {
 
 /* ========== 8. FOOTER ========== */
 .site-footer {
-  background-color: var(--color-accent);
+  background-color: var(--color-header);
   color: #fff;
   text-align: center;
   padding: 2rem 5vw;
