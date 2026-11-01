@@ -111,3 +111,29 @@ favButtons.forEach(function (button) {
     saveFavorites(favorites);
   });
 });
+
+// ---------- 4. INGREDIENT SCALER (recipe pages) ----------
+const servingsInput = document.getElementById("servings");
+const amountSpans = document.querySelectorAll(".amount");
+
+// Round to 2 decimals and drop trailing zeros (e.g. 2.50 becomes 2.5)
+function formatAmount(number) {
+  return parseFloat(number.toFixed(2)).toString();
+}
+
+function scaleIngredients() {
+  const baseServings = Number(servingsInput.dataset.baseServings);
+  const newServings = Number(servingsInput.value);
+
+  // Ignore empty, zero or negative values
+  if (!newServings || newServings < 1) return;
+
+  amountSpans.forEach(function (span) {
+    const baseAmount = Number(span.dataset.base);
+    span.textContent = formatAmount((baseAmount * newServings) / baseServings);
+  });
+}
+
+if (servingsInput) {
+  servingsInput.addEventListener("input", scaleIngredients);
+}
