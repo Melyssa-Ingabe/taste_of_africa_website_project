@@ -672,6 +672,26 @@ thead th {
   margin-bottom: 0.3rem;
 }
 
+/* ========== ABOUT PAGE ========== */
+.mission {
+  background-color: var(--color-card);
+  border-left: 8px solid var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.8rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.region-page p + p {
+  margin-top: 1rem;
+}
+
+.map-section p {
+  margin-bottom: 1rem;
+}
+
 /* ========== 9. RESPONSIVE ========== */
 @media (max-width: 700px) {
   .site-header {

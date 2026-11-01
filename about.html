@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our mission to promote African food heritage, and a short history of African cuisine and its global influence.">
+  <title>About Us | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html">West Africa</a></li>
+        <li><a href="east-africa.html">East Africa</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main class="region-page">
+
+    <header class="region-intro">
+      <h1>About Us</h1>
+      <p class="recipe-meta">Celebrating African food, one dish at a time</p>
+    </header>
+
+    <!-- MISSION -->
+    <section aria-labelledby="mission-title">
+      <h2 id="mission-title">Our Mission</h2>
+      <blockquote class="mission">
+        <p>
+          Tastes of Africa exists to promote and preserve African food heritage. We share
+          traditional recipes, the stories behind them and the people who cook them, so that
+          more people can learn about, cook and enjoy the flavours of the continent.
+        </p>
+      </blockquote>
+    </section>
+
+    <!-- HISTORY -->
+    <section aria-labelledby="history-title">
+      <h2 id="history-title">A Brief History of African Cuisine</h2>
+      <p>
+        African cooking is built on ingredients that grew on the continent for thousands of years,
+        such as <mark>teff</mark>, <mark>sorghum</mark>, <mark>millet</mark>, yams, okra and
+        <mark>fonio</mark>. Each region developed its own methods, from the fermented injera of
+        Ethiopia to the pounded doughs and slow-cooked stews of West and Central Africa.
+      </p>
+      <p>
+        Trade and travel added new flavours over time. Along the East African coast, trade across
+        the Indian Ocean brought spices and cooking styles from Arabia and India, which is one
+        reason dishes like chapati are loved in Kenya and Tanzania today. Later, crops from the
+        Americas, including <mark>maize</mark>, <mark>cassava</mark>, groundnuts, tomatoes and chili
+        peppers, arrived in Africa and became central to everyday meals. Many of the dishes in this
+        website, such as jollof rice and isombe, use them.
+      </p>
+    </section>
+
+    <!-- GLOBAL INFLUENCE -->
+    <section aria-labelledby="influence-title">
+      <h2 id="influence-title">African Food Around the World</h2>
+      <p>
+        African foods and cooking traditions have travelled far beyond the continent. Okra, rice
+        dishes and one-pot cooking carried by African people shaped the cuisines of the Caribbean,
+        Brazil and the southern United States. Today, dishes like jollof rice and suya appear on
+        restaurant menus around the world, and ancient grains such as teff and fonio are being
+        rediscovered by chefs and home cooks everywhere.
+      </p>
+    </section>
+
+        <!-- MAP -->
+    <section class="map-section" aria-labelledby="map-title">
+      <h2 id="map-title">Visit a Food Landmark: Makola Market</h2>
+      <p>
+        Makola Market in Accra, Ghana, is the biggest market in the country and a lively place to
+        see African food culture first-hand, with stalls of fresh fruit, street snacks and hot
+        meals. It also appears in our West Africa video.
+      </p>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1313776469706!2d-0.20838252650221048!3d5.5475324337378495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf910c32bbf7a3%3A0xa95de6001cd5e829!2sMakola%20Market!5e0!3m2!1sen!2srw!4v1793559711056!5m2!1sen!2srw"
+          title="Map showing Makola Market in Accra, Ghana"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tastes of Africa. Celebrating African food heritage.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
