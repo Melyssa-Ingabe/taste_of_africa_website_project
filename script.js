@@ -137,3 +137,58 @@ function scaleIngredients() {
 if (servingsInput) {
   servingsInput.addEventListener("input", scaleIngredients);
 }
+
+// ---------- 5. CONTACT FORM VALIDATION (contact.html) ----------
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  const nameInput = document.getElementById("name");
+  const messageInput = document.getElementById("message");
+  const messageError = document.getElementById("message-error");
+  const confirmation = document.getElementById("confirmation");
+
+  contactForm.addEventListener("submit", function (event) {
+    // Stop the form from submitting automatically
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const message = messageInput.value.trim();
+
+    // Validate: the message must be more than 20 characters
+    if (message.length <= 20) {
+      messageError.textContent =
+        "Your message must be more than 20 characters. You have written " +
+        message.length + ".";
+      messageInput.classList.add("invalid");
+      messageInput.focus();
+      return;
+    }
+
+    // Success: clear errors, hide the form, show the confirmation
+    messageError.textContent = "";
+    messageInput.classList.remove("invalid");
+    contactForm.classList.add("hidden");
+
+    confirmation.textContent =
+      "Thank you, " + name + "! We've received your message.";
+    confirmation.classList.remove("hidden");
+  });
+
+  // Remove the error as soon as the user starts fixing the message
+  messageInput.addEventListener("input", function () {
+    if (messageInput.value.trim().length > 20) {
+      messageError.textContent = "";
+      messageInput.classList.remove("invalid");
+    }
+  });
+}
+
+// ---------- 6. NEWSLETTER SIGNUP (footer) ----------
+const newsletterForm = document.getElementById("newsletter-form");
+
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    newsletterForm.innerHTML = "<p>Thank you for subscribing!</p>";
+  });
+}
