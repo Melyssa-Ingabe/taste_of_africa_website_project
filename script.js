@@ -32,3 +32,30 @@ if (themeToggle) {
     updateThemeIcon(isDark);
   });
 }
+
+// ---------- 2. RECIPE FILTER (recipes.html) ----------
+const filterButtons = document.querySelectorAll(".filter-btn");
+const recipeCards = document.querySelectorAll(".recipe-card");
+
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const selectedRegion = button.dataset.region;
+
+    // Highlight only the clicked button
+    filterButtons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    button.classList.add("active");
+
+    // Loop through the cards and show or hide each one
+    recipeCards.forEach(function (card) {
+      const cardRegion = card.dataset.region;
+
+      if (selectedRegion === "all" || cardRegion === selectedRegion) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+  });
+});

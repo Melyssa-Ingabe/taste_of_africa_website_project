@@ -542,6 +542,12 @@ thead th {
   margin-top: 1rem;
 }
 
+/* Keep cards card-sized when the filter leaves only one or two */
+#recipe-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+  justify-content: center;
+}
+
 /* Keep buttons aligned at the bottom of every card */
 .recipe-card {
   display: flex;
